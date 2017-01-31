@@ -2,7 +2,6 @@ require 'json'
 require 'bunny'
 # Console chat client
 class Chat
-
   # formats display of messages
   def display_message(user, message)
     puts "#{user}: #{message}"
