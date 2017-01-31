@@ -36,9 +36,10 @@ class Chat
   end
 
   def wait_for_message
-    message = gets.strip
-    publish_message(@current_user, message)
-    wait_for_message
+    loop do
+      message = gets.strip
+      publish_message(@current_user, message)
+    end
   end
 end
 
