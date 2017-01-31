@@ -22,7 +22,7 @@ class Chat
   end
 
   def listen_for_messages
-    queue = @channel.queue('super.chat')
+    queue = @channel.queue('')
 
     queue.bind(@exchange).subscribe do |_delivery_info, _metadata, payload|
       data = JSON.parse(payload)
