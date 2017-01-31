@@ -56,7 +56,7 @@ class Chat
   end
 end
 
-# class initialize
+# initialize object
 chat = Chat.new
 # start reading input from console
 chat.wait_for_message
